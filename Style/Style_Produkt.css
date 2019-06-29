@@ -1,0 +1,684 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark,
+audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+#content{
+    max-width:100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+
+    font-size: 100%;
+}
+
+/*Font*/
+a,p{
+    font-size: 1.2vw;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+    font-size: 1.8vw;
+    font-family: 'lato', sans-serif;
+}
+
+h2{
+    font-size: 1.5vw;
+    font-family: 'lato', sans-serif;
+}
+
+h3{
+    font-size: 1.3vw;
+    font-family: 'lato', sans-serif;
+    font-weight: bold;
+}
+
+
+
+/*Header 1*/
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    max-width: 100%;
+    background-color: #FFFFFF;
+}
+
+.sprak{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-left: 26.3%;
+}
+
+.sprak img{
+    width: 5.5%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.kundvagn {
+    margin-right: 2.5%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.kundvagn img{
+    width: 250%;
+    height: auto;
+    opacity: 0.6;
+
+}
+
+.login {
+    margin-right: 12%;
+    margin-top: 0.1%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.login img{
+    width: 13%;
+    height: 91%;
+    opacity: 0.9;
+}
+
+
+/*Header 2*/
+.header{
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    flex: auto;
+
+    max-width: 100%;
+    background-color: #FFFFFF;
+}
+
+.headerbild img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Nav, dropdown meny*/
+nav{
+    flex-flow: row wrap;
+    justify-content: center;
+
+    align-items: center;
+
+    width: 100%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    background: #152d4d;
+
+    border: 10px solid #152d4d;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+nav li a {
+    font-size: 1.5vw;
+    display: inline-block;
+    color: white;
+    align-content: center;
+    margin: 5% 0;
+    text-decoration: none;
+}
+
+nav li a:hover, .dropdown:hover {
+    background-color: #014463;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10% 5%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #014463;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+form{
+    max-width: 80%;
+    color: #ffffff;
+}
+
+input[type=text]{
+    max-width: 80%;
+    padding: 5%;
+    border: none;
+    font-size: 1vw;
+
+    border-radius: 5px;
+}
+
+label{
+    display: none;
+}
+
+
+
+/*Main*/
+.bilder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: flex-start;
+
+    flex: auto;
+
+    margin-bottom: 3%;
+
+}
+
+.bilder img{
+    width: 90%;
+}
+
+
+/*Footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border-top: solid;
+    border-bottom: solid;
+    width: 100%;
+}
+
+.betalmedel{
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 26.3%;
+    margin-top: 2%;
+
+    width: 15%;
+    height: 40%;
+}
+
+.betalmedel img {
+    height: auto;
+    width: 50%;
+    margin-bottom: 7%;
+}
+
+.frakt{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5%;
+
+    margin-left: 6%;
+
+    width: 15%;
+    height: 40%;
+}
+
+.frakt img {
+    height: auto;
+    width: 90%;
+    margin-bottom: 1%;
+}
+
+.valgorenhet{
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+
+    margin-left: 7%;
+
+
+    width: 25%;
+    height: 40%;
+}
+
+.valgorenhet img {
+    height: auto;
+    width: 50%;
+    margin-bottom: 15%;
+}
+
+.kontakt{
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+
+    margin-right: 27%;
+
+
+    width: 25%;
+    height: 40%;
+}
+
+.p1 {
+    padding-bottom: 5%;
+}
+
+
+.clearfix {
+    clear:both;
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+    /*Font*/
+    a, p {
+        font-size: 1.7vw;
+    }
+
+    .p1{
+        font-size: 1.7vw;
+        padding-bottom: 10%;
+    }
+
+    h2 {
+        font-size: 2.3vw;
+    }
+
+    h3{
+        font-size: 2vw;
+    }
+
+
+    /*Header*/
+    .sprak{
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-left: 18%;
+    }
+
+    .sprak img{
+        width: 5%;
+        height: auto;
+        opacity: 0.9;
+    }
+
+    .kundvagn {
+        margin-right: 2%;
+
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .login {
+        margin-right: -4%;
+
+        margin-top: 0.1%;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    header{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        max-width: 100%;
+        background-color: #FFFFFF;
+    }
+
+
+    /*Nav*/
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+
+        margin-right: 15%;
+        margin-left: 15%;
+
+        padding-bottom: 1%;
+
+    }
+
+    nav li a {
+        font-size: 1.7vw;
+    }
+
+
+
+    /*Main*/
+    .bilder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: flex-start;
+
+        flex: auto;
+
+        box-sizing: border-box;
+
+        margin-left: 23.6%;
+    }
+
+    .bilder img {
+        width: 70%;
+    }
+
+
+
+    /*Footer*/
+    .betalmedel{
+        flex-direction: column;
+        justify-content: center;
+
+        margin-left: 18%;
+        margin-top: 2%;
+
+        width: 7%;
+        height: 32%;
+    }
+
+    .betalmedel img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 7%;
+    }
+
+    .frakt{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1.5%;
+
+        margin-left: 8%;
+
+        width: 10%;
+        height: 35%;
+    }
+
+    .frakt img {
+        height: auto;
+        width: 150%;
+        margin-bottom: 1%;
+    }
+
+    .valgorenhet{
+        flex-direction: column;
+        justify-content: center;
+        margin: 2%;
+
+        margin-left: 11%;
+
+
+        width: 15%;
+        height: 30%;
+    }
+
+    .valgorenhet img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 25%;
+    }
+
+    .kontakt{
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 2%;
+
+        margin-right: 10%;
+        margin-left: 4%;
+
+
+        width: 25%;
+        height: 40%;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+    a, p{
+        font-size: 2vw;
+    }
+
+    h1{
+        font-size: 3vw;
+    }
+
+    h2{
+        font-size: 2.7vw;
+    }
+
+    h3{
+        font-size: 2.4vw;
+    }
+
+
+    .sprak{
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-left: 13%;
+    }
+
+    .sprak img{
+        width: 7%;
+        height: auto;
+        opacity: 0.9;
+    }
+
+
+    .kundvagn {
+        margin-right: 2%;
+
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .login {
+        margin-right: -11%;
+
+        margin-top: 0.1%;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+
+    header{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        max-width: 100%;
+        background-color: #FFFFFF;
+    }
+
+
+
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+
+        margin-right: 10%;
+        margin-left: 10%;
+
+        padding-bottom: 1%;
+
+    }
+
+    nav li a {
+        font-size: 2vw;
+        display: inline-block;
+        color: white;
+        align-content: center;
+        margin: 5% 0;
+        text-decoration: none;
+    }
+
+
+
+    .bilder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: flex-start;
+
+        flex: auto;
+
+        box-sizing: border-box;
+
+        margin-left: 24%;
+    }
+
+    .bilder img {
+        width: 70%;
+    }
+
+
+
+    .betalmedel{
+        flex-direction: column;
+        justify-content: center;
+
+        margin-left: 17%;
+        margin-top: 2%;
+
+        width: 7%;
+        height: 32%;
+    }
+
+    .betalmedel img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 7%;
+    }
+
+    .frakt{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1.5%;
+
+        margin-left: 10%;
+
+        width: 10%;
+        height: 35%;
+    }
+
+    .frakt img {
+        height: auto;
+        width: 150%;
+        margin-bottom: 1%;
+    }
+
+    .valgorenhet{
+        flex-direction: column;
+        justify-content: center;
+        margin: 2%;
+
+        margin-left: 13%;
+
+
+        width: 15%;
+        height: 30%;
+    }
+
+    .valgorenhet img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 25%;
+    }
+
+    .kontakt{
+        flex-direction: column;
+        justify-content: center;
+        margin: 2%;
+
+        margin-right: 3%;
+        margin-left: 5%;
+
+
+        width: 25%;
+        height: 40%;
+    }
+
+}
